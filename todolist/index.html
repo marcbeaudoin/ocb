@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Nappe Vocale</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <h1 class="topbar-title">Nappe Vocale</h1>
+    <button id="mic-btn" class="mic-btn" type="button" aria-label="Dicter une nouvelle tâche ou en cocher une">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Z"/>
+        <path fill="currentColor" d="M19 11a1 1 0 0 0-2 0 5 5 0 0 1-10 0 1 1 0 0 0-2 0 7 7 0 0 0 6 6.92V20H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2h-2v-2.08A7 7 0 0 0 19 11Z"/>
+      </svg>
+      <span class="mic-ring" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <main class="content" id="content">
+    <p class="hint">Touchez le micro et dictez une tâche. Pour la cocher, dites par exemple « coche les courses » ou « fait la vaisselle ».</p>
+
+    <div id="feedback" class="feedback" role="status" aria-live="polite" hidden></div>
+
+    <section aria-labelledby="todo-heading">
+      <h2 id="todo-heading">À faire <span id="todo-count" class="count"></span></h2>
+      <ul id="todo-list" class="task-list"></ul>
+      <p id="empty-todo" class="empty-msg">Aucune tâche pour l'instant. Dictez-en une !</p>
+    </section>
+
+    <section aria-labelledby="done-heading">
+      <h2 id="done-heading">Terminées <span id="done-count" class="count"></span></h2>
+      <ul id="done-list" class="task-list"></ul>
+      <p id="empty-done" class="empty-msg">Aucune tâche terminée.</p>
+    </section>
+  </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

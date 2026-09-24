@@ -1,0 +1,26 @@
+{
+  "category" : "productivity",
+  "createdBy" : {
+    "promptVersion" : "20",
+    "provider" : "llmproxy"
+  },
+  "entry" : "index.html",
+  "icon" : {
+    "symbol" : "checkmark.circle.fill",
+    "tint" : "teal"
+  },
+  "id" : "AFA2FEF3-A74A-4CC2-8F59-4A52A434033D",
+  "mcp" : [
+
+  ],
+  "name" : "Todolist",
+  "networkOrigins" : [
+
+  ],
+  "permissions" : [
+    "speech.listen"
+  ],
+  "schemaVersion" : 1,
+  "summary" : "Une to-do liste que l'on remplit et coche entièrement à la voix.",
+  "version" : 1
+}

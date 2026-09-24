@@ -1,0 +1,33 @@
+{
+  "apps" : [
+    {
+      "category" : "productivity",
+      "icon" : {
+        "symbol" : "checkmark.circle.fill",
+        "tint" : "teal"
+      },
+      "mcp" : [
+
+      ],
+      "name" : "Todolist",
+      "networkOrigins" : [
+
+      ],
+      "permissions" : [
+        "speech.listen"
+      ],
+      "shots" : [
+        "shots/1.jpg"
+      ],
+      "slug" : "todolist",
+      "summary" : "Une to-do liste que l'on remplit et coche entièrement à la voix.",
+      "updated" : "2026-09-24",
+      "version" : 1
+    }
+  ],
+  "publisher" : {
+    "github" : "marcbeaudoin",
+    "name" : "Marc Beaudoin"
+  },
+  "schemaVersion" : 1
+}
