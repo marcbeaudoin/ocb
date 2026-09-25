@@ -1,0 +1,29 @@
+{
+  "author" : {
+    "name" : "Marc Beaudoin"
+  },
+  "category" : "shopping",
+  "createdBy" : {
+    "promptVersion" : "20",
+    "provider" : "llmproxy"
+  },
+  "entry" : "index.html",
+  "icon" : {
+    "symbol" : "message.fill",
+    "tint" : "orange"
+  },
+  "id" : "6A190B62-1A03-4BCF-B885-D59DAF2EB113",
+  "mcp" : [
+    "com.doungdoung\/orange-marketplace"
+  ],
+  "name" : "Conseiller Orange",
+  "networkOrigins" : [
+
+  ],
+  "permissions" : [
+    "llm.ask"
+  ],
+  "schemaVersion" : 1,
+  "summary" : "Un chatbot brandé Orange aide les clients à choisir des produits, forfaits et offres pertinents, puis les dirige vers l’achat en ligne.",
+  "version" : 4
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#fff8f1">
+  <title>Conseiller Orange</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="30" height="30" role="img"><rect width="32" height="32" rx="9" fill="#FF7900"/><path d="M8 9.5A3.5 3.5 0 0 1 11.5 6h9A3.5 3.5 0 0 1 24 9.5v6A3.5 3.5 0 0 1 20.5 19H16l-5.5 5v-5h-1A3.5 3.5 0 0 1 6 15.5v-6A3.5 3.5 0 0 1 8 9.5Z" fill="#fff"/><circle cx="12" cy="12.5" r="1.2" fill="#FF7900"/><circle cx="16" cy="12.5" r="1.2" fill="#FF7900"/><circle cx="20" cy="12.5" r="1.2" fill="#FF7900"/></svg></div>
+    <div class="topbar-title">Conseiller Orange</div>
+    <button class="icon-button" id="clearChat" type="button" aria-label="Nouvelle conversation" title="Nouvelle conversation">＋</button>
+  </header>
+
+  <main class="app-main">
+    <section id="advisorView" class="view" aria-labelledby="advisorTitle">
+      <div class="intro" id="advisorTitle">
+        <span class="eyebrow">VOTRE COMPAGNON D’ACHAT</span>
+        <h1>Trouvez ce qui vous<br><em>ressemble.</em></h1>
+        <p>Je vous aide à clarifier votre besoin et à comparer les options Orange, sans engagement.</p>
+      </div>
+
+      <div class="chips" aria-label="Suggestions de questions">
+        <button class="suggestion" type="button" data-prompt="Je cherche un smartphone pour prendre de belles photos, avec un budget de 30 € par mois.">📷 Photo & smartphone</button>
+        <button class="suggestion" type="button" data-prompt="Quel forfait mobile serait adapté à une personne qui regarde beaucoup de vidéos ?">◌ Forfait mobile</button>
+        <button class="suggestion" type="button" data-prompt="Je veux équiper mon foyer avec une offre internet et la TV.">⌂ Maison connectée</button>
+      </div>
+
+      <div class="conversation" id="conversation" aria-live="polite"></div>
+      <div id="thinking" class="thinking" hidden><span></span><span></span><span></span><b>Le conseiller réfléchit…</b></div>
+
+      <form class="composer" id="composer">
+        <label class="sr-only" for="messageInput">Votre message</label>
+        <textarea id="messageInput" rows="1" maxlength="1200" placeholder="Décrivez ce dont vous avez besoin…" autocomplete="off"></textarea>
+        <button class="send-button" type="submit" aria-label="Envoyer le message">↑</button>
+      </form>
+      <p class="privacy-note">Vos messages restent sur cet appareil, sauf si vous choisissez de conserver vos préférences.</p>
+    </section>
+
+    <section id="historyView" class="view" aria-labelledby="historyTitle" hidden>
+      <div class="page-heading">
+        <span class="eyebrow">VOTRE CARNET</span>
+        <h1 id="historyTitle">Historique</h1>
+        <p>Retrouvez vos offres et produits consultés sur cet appareil.</p>
+      </div>
+      <div id="historyList" class="history-list"></div>
+      <div id="preferenceBox" class="preference-box" hidden></div>
+    </section>
+  </main>
+
+  <nav class="tabbar" aria-label="Navigation principale">
+    <button class="tab active" data-view="advisorView" type="button" aria-current="page"><span>✦</span>Conseiller</button>
+    <button class="tab" data-view="historyView" type="button"><span>↺</span>Historique <small id="historyCount" hidden>0</small></button>
+  </nav>
+  <script src="app.js"></script>
+</body>
+</html>

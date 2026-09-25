@@ -23,6 +23,35 @@
       "summary" : "Une to-do liste que l'on remplit et coche entièrement à la voix.",
       "updated" : "2026-09-24",
       "version" : 1
+    },
+    {
+      "author" : {
+        "name" : "Marc Beaudoin"
+      },
+      "category" : "shopping",
+      "icon" : {
+        "symbol" : "message.fill",
+        "tint" : "orange"
+      },
+      "mcp" : [
+        "com.doungdoung/orange-marketplace"
+      ],
+      "name" : "Conseiller Orange",
+      "networkOrigins" : [
+
+      ],
+      "permissions" : [
+        "llm.ask"
+      ],
+      "shots" : [
+        "shots/1.jpg",
+        "shots/2.jpg",
+        "shots/3.jpg"
+      ],
+      "slug" : "conseiller-orange",
+      "summary" : "Un chatbot brandé Orange aide les clients à choisir des produits, forfaits et offres pertinents, puis les dirige vers l’achat en ligne.",
+      "updated" : "2026-09-25",
+      "version" : 4
     }
   ],
   "publisher" : {
